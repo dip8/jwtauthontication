@@ -64,6 +64,8 @@ public class SecurityConfig {
                                 .permitAll()
                                 .requestMatchers("/auth/**")
                                 .permitAll()
+                                .requestMatchers("/products/**")
+                                .permitAll()
                                 .anyRequest()
                                 .authenticated())
                 .exceptionHandling(exception ->
